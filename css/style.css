@@ -1,0 +1,98 @@
+  
+  /* estilo do corpo da página */
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color: black;
+  }
+  
+/* caixa do menu */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-image: repeating-linear-gradient( rgba(116, 255, 155, 0.2),
+   rgba(0, 0, 0, 0.1), rgba(116, 255, 155, 0.2));
+    border: 2px rgba(118, 238, 124, 0.3) solid;
+    margin: 2px;
+  }
+
+  .opc{
+    width: 120px;
+  }
+  
+  li {
+    float: left;
+  }
+  /* items do menu */
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 1px;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    border-right: 1px rgba(118, 238, 124, 0.3) solid;
+    background-image: repeating-linear-gradient(140deg, rgba(11, 28, 66, 0.2),
+     rgba(255, 255, 255, 0.1) 10%, rgba(11, 28, 66, 0.2)40%);
+  }
+  
+  /* destaca o item ao passar o ponteiro */
+  li a:hover:not(.active) {
+    background-color: rgb(166, 197, 162);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  
+  /* indica no menu a página aberta */
+  .active{
+    background-color: rgb(76, 230, 0);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  /* posiciona o logo */
+  .logo{
+    float: right;
+    padding-right: 5px;
+  }
+
+  /* conteúdo da página */
+  .main {
+    margin: 2px;
+    min-height: calc(100vh - 133px);
+    background-image:repeating-linear-gradient(20deg, rgba(0, 0, 0, 0.1) 30%, 
+    rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.1) 70%) ;
+    border: 2px rgba(255, 230, 0, 0.336) solid;
+    padding: 10px;
+    text-shadow: black 3px 3px 3px;
+    color: #ddd;
+  
+  }
+
+  /* rodapé */
+  .footer {
+    text-align: right;
+    background-image: linear-gradient( rgba(20, 116, 145, 0.2),
+    rgba(0, 0, 0, 0.2) , rgba(20, 116, 145, 0.2));
+    border: 2px rgba(118, 184, 238, 0.5) solid;
+    color: #ddd;
+    height: 40px;
+    margin: 2px;
+    padding: 0 10px 6px 0;
+  }
+
+  /* transformação responsivo */
+  @media screen and (max-width: 500px){
+    .logo{
+      padding-inline-end: calc(50% - 48px);
+    }
+    .opc{
+      width: 100%;
+      border-top: 2px rgba(118, 238, 124, 0.3) solid;
+    }
+    .main{
+      min-height: calc(100vh - 276px);
+    }
+  }
+  
