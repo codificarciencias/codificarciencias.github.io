@@ -85,7 +85,7 @@
   /* transformação responsivo */
   @media screen and (max-width: 500px){
     .logo{
-      padding-inline-end: calc(50% - 48px);
+      padding-inline-end: calc(50% - 40px);
     }
     .opc{
       width: 100%;
