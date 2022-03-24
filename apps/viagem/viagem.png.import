@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/viagem.png-60c6854d9a773a7426119e81714ad72a.stex"
+path="res://.import/viagem.png-41b6b79fdc63e38c945ded0fcd406c99.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://executavel/viagem.png"
-dest_files=[ "res://.import/viagem.png-60c6854d9a773a7426119e81714ad72a.stex" ]
+source_file="res://export/webapp/viagem.png"
+dest_files=[ "res://.import/viagem.png-41b6b79fdc63e38c945ded0fcd406c99.stex" ]
 
 [params]
 
