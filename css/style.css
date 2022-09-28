@@ -7,7 +7,7 @@
   }
   
 /* caixa do menu */
-  ul {
+  .ulbt {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
@@ -77,16 +77,26 @@
   .texto{
     text-align: left;
     max-width: 500px;
+    
   }
-  /*limita o paragrafo na largura*/
-  .par{
-    max-width: 550px;
+
+  .texto2{
+    text-align: justify;
+    max-width: 700px;
+    line-height: 1.5;
   }
 
   hr{
-    border: 1px rgb(125, 138, 9) solid;;
+    border: 1px rgb(125, 138, 9) solid;
     box-sizing:border-box;
     width:100%;  
+  }
+
+  .divisao{
+    border: 1px rgb(125, 138, 9) solid;
+    background-image: repeating-linear-gradient( rgba(255, 255, 255, 0.06),
+   rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.06));
+    width: 70%;
   }
 
 
@@ -104,16 +114,21 @@
 
   /* imagem click e efeitos*/
   .btn{
+    max-width: 90%;
+    border: 2px rgb(92, 92, 92) solid;
+    margin: 2px;
     cursor: pointer;
   }
 
   .btn:hover{
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgb(255, 255, 255);
+    border: 2px rgb(255, 255, 255) solid;
+    margin: 2px;
   }
 
 
   /* transformação responsivo */
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 600px){
     .logo{
       padding-inline-end: calc(50% - 40px);
     }
@@ -125,7 +140,7 @@
       min-height: calc(100vh - 276px);
     }
     
-    .btn,.texto{
+    .btn,.texto,.divisao{
       width: 100%;
     }
   }
